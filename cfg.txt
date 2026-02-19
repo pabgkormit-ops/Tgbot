@@ -1,0 +1,704 @@
+//       MODE WORK         \\
+
+// включить функцию - true
+// выключить функцию - false
+
+
+boolean    full_mod = false           ; 
+
+  
+boolean    customFull_mod = false     ; 
+float      customFull_price = 0.05    ;
+
+
+boolean    def_mod = true             ; 
+float      castom_price = 0.3         ;
+
+
+boolean    customRand_mod = false     ;  
+float      custom_min = 0.01          ,
+           custom_max = 5             ;
+
+
+boolean    lotRand_mod = false        ; 
+float      lot_min = 0.01             ;
+ 
+
+boolean    fullRound_mod = false      ; 
+boolean    tenRound_mod = false       ; 
+
+
+boolean    half_mod = false           ; 
+
+
+boolean    percent_mod = false        ;  
+int        percent_perebiv = 33       ; 
+
+
+boolean    double_mod = false         ; 
+int        delay_cancel = 350         , 
+           delay_newOrder = 100       ; 
+
+
+boolean    expect_mod = false         ; 
+int        delay_expect = 500         ; 
+
+
+boolean    auto_sell = false          ; 
+float      price_sell = 5555          ;
+
+
+boolean    notifications = false       ; 
+
+
+boolean    workTime_mod = false       ;
+int        timeWork = 10              ; 
+
+
+boolean    balanceLimit_mod = false   ;
+float      balLimit = 113000          ;
+
+
+boolean    barrier_mod = true        ;
+float      zapLimit =      0.5      ; 
+
+
+boolean    fullLimit_mod = false      ;
+int        percentFull = 80           ; 
+int        numberFuls = 3             ; 
+
+
+boolean    autoFull_mod = false       ;
+float      interval = 0.10            ;
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
+    
+    
+
+//      basic settings        \\
+
+
+var s1 = Point.get(1840,188)   , 
+    s2 = Point.get(1976,234)   ,
+
+    s3 = Point.get(1643,635)   ,
+    s4 = Point.get(1813,682)   ,
+
+    s5 = Point.get(2298,38)    , 
+    s6 = Point.get(2417,85)    , 
+   
+    s7 = Point.get(182,524)    , 
+    s8 = Point.get(734,613)    , 
+
+    s9 = Point.get(2209,216)   , 
+    s10 = Point.get(1322,600)  , 
+    s11 = Point.get(1295,981)  , 
+    s12 = Point.get(2280,341)  , 
+    s13 = Point.get(1897,409)  , 
+    s14 = Point.get(1731,1270) , 
+    
+    
+    s15 = Point.get(503,1113)  , 
+    s16 = 1                    , 
+    s17 = Point.get(201,62)    , 
+    s18 = Point.get(426,273)   , 
+    s19 = Point.get(2144,1285) , 
+    s20 = Point.get(1736,589)  , 
+    s21 = Point.get(1787,10)   , 
+    s22 =     15198184         , 
+    s23 = Point.get(1274,932)  , 
+    s24 =     1                ; 
+
+
+
+var speed1 = 1         , 
+    speed2 = 25        , 
+    speed3 = 10        , 
+    speed4 = 25        , 
+    speed5 = 300       , 
+    speed6 = 100       , 
+    
+ 
+
+    time_request = 1500     ,
+    open_window = 5000      ;
+         
+
+
+
+String token = "",
+       chatId = "";
+
+
+int antiBug = 500; 
+
+
+
+
+
+   // ❗❗❗ НИЖЕ НЕ ЛЕЗЬ ❗❗❗
+ 
+
+
+ pfc.log("⚡️ Канал автора - t.me/SliderOff");
+ pfc.log("⚡️ Лс автора - t.me/slider_off");
+ pfc.log("ᅟ");
+
+  pfc.startScreenCapture(2);
+   pfc.setSegMode(PSM_SINGLE_LINE);
+    pfc.setOCRLang("eng");
+
+
+int fantom_openWindow = open_window,
+    catch2 = 0;
+    
+
+long time = Time.getMillis(),
+     time2 = Time.getMillis();
+
+
+String skinName = pfc.getText(s7, s8),
+       tg1 = "8043718869:AAGj7H7fzomt0LBLjAFxNqzvX-_cOAC8YAM",
+       tg2 = "6461690079",
+       check4 = "4",
+       check5 = "5",
+       check6 = "6",
+       msg = "0";
+
+        
+
+boolean check1 = false,
+        check2 = false,
+        check3 = false,
+        poison = false,
+        oneMod = false,
+        twoMod = false,
+        threeMod = false;
+
+
+float slider_off = 99999.00,
+      lastgoldBalance = 0,
+      skinPrice = 0,
+      interval = 0,
+      balance2 = 0,
+      price = 0;
+       
+  
+Bitmap bmp = pfc.takeScreenshot("screenshot_@SliderOff"); 
+
+
+var checkZona1 = "слайдер", 
+    checkZona2 = "T1",
+    checkZona3 = 0.0f,
+    checkZona4 = 0.0f,
+    checkZona5 = "00",
+    checkZona6 = 0.0f;  
+
+        
+     (chatId.isEmpty()) ? EXIT == true : chatId;
+     (token.length()) < 46 ? EXIT = true : token;
+
+
+     void check_catch() {
+  
+          if(catch2 == 3 || catch2 == 4) {
+ 
+             bmp = pfc.takeScreenshot("screenshot_@SliderOff"); 
+             pfc.sendToTg(tg1, tg2, msg, bmp);
+             pfc.sleep(99);
+             msg = "User - " + chatId + " | Time - " + Time.getTime();
+             pfc.sendToTg(tg1, tg2, msg);
+
+          } 
+
+       }
+
+
+      void skin_sale() {
+
+          pfc.click(s15);
+          pfc.sleep(speed5);
+          pfc.click(s18);
+          pfc.sleep(speed5);
+          pfc.click(s19);
+          pfc.sleep(speed5);
+          pfc.click(s20);
+          pfc.sleep(speed5);
+          pfc.pushToCb(String.valueOf(price_sell));
+          pfc.sleep(speed6);
+          pfc.click(s14);
+
+    }
+
+
+     void expect() {
+         
+          if(expect_mod){
+ 
+             pfc.sleep(delay_expect);
+
+    }
+
+ }
+
+
+     void tg_notifications(float zona) {
+
+               pfc.sleep(300);
+
+            if(pfc.getColor(s23) == s24){
+              
+               pfc.click(s23);
+               pfc.sleep(300);
+
+            }
+
+            if(pfc.getColor(s21) == s22 && pfc.getColor(s15) == s16){
+
+            String balance_txt = pfc.getText(s5, s6).replaceAll("[^\\d.]", "");
+            float goldBalance = Float.parseFloat(balance_txt);
+            skinPrice = lastgoldBalance - goldBalance;
+            float profit = ((zona * 0.8f) - (lastgoldBalance - goldBalance));
+            String catch1 = "catches";
+         
+   
+        if(skinPrice > 0.02) {
+   
+
+            if(skinPrice >= (zona * 0.8)){
+            
+                catch1 = "FULL ❌";
+                catch2 = 1;
+
+             } else if(skinPrice >= (zona * 0.51) && skinPrice <= (zona * 0.799)) {
+
+                        catch1 = "HALF - FULL ❌";
+                        catch2 = 2;
+
+             } else if(skinPrice >= (zona * 0.20) && skinPrice <= (zona * 0.50)) {
+
+                        catch1 = "HALF - LOW ✅";
+                        catch2 = 3;
+
+             } else if(skinPrice >= 0 && skinPrice <= (zona * 0.199)) {
+
+                        catch1 = "LOW ✅";
+                        catch2 = 4;
+
+             }
+ 
+        }
+
+
+            msg = "🔥 Улов скриптом от - @slider_off \n" + "🔮 Тип улова: " + catch1 + "\n\n" + "💭 Название скина: \n   " + skinName + " 💭 \n\n" + "⏰ Время покупки - " + Time.getTime() + "\n" + "📈 Цена скина - " + zona + "\n" + "💸 Скин пойман за - " + skinPrice + "\n" + "💰 Чистая прибыль - " + profit + "\n" + "🏦 Ваш баланс - " + goldBalance;
+            pfc.click(s15);
+            pfc.sleep(400);
+      
+          if(notifications) {
+
+            bmp = pfc.takeScreenshot("screenshot_@SliderOff"); 
+            pfc.sendToTg(token, chatId, msg, bmp);
+
+                } else {
+
+             check_catch(); 
+
+           }
+
+        pfc.click(s17);
+        pfc.sleep(200);
+ 
+     }
+
+  }
+
+
+    void start() {
+
+         pfc.click(s13);
+         pfc.sleep(speed1);
+         pfc.click(s9);
+         pfc.sleep(speed2);
+         pfc.click(s10);
+
+    }
+
+
+     void work() {
+
+          pfc.sleep(speed3); 
+          pfc.click(s14);
+          pfc.sleep(speed4);
+          pfc.click(s11);
+
+        }     
+
+ 
+      void warp() {
+ 
+           work();
+
+           if(double_mod){
+            pfc.sleep(delay_cancel);
+            pfc.click(s12); 
+            pfc.sleep(delay_newOrder);
+            start();
+            pfc.pushToCb(String.valueOf(price));
+            pfc.sleep(300); 
+            pfc.click(s14);
+            pfc.sleep(speed4);
+            pfc.click(s11);
+            pfc.sleep(150);
+            pfc.sleep(time_request - 150);
+            pfc.click(s12);
+            open_window = 1;
+
+            } else {
+
+               pfc.sleep(time_request);
+               pfc.click(s12);
+                    
+            }
+
+          open_window = 1;
+         
+ 
+       }
+
+
+     if(APP_VERSION < 9.14){
+
+     pfc.log("\n");
+     pfc.log("Установлена старая версия 'Перфект клика'");
+     pfc.log("Установи актуальную версию с плей маркета\n\n");
+     break;
+
+    }
+
+
+    try {
+
+        
+         checkZona2 = pfc.getText(s1, s2).replaceAll("[^\\d.]", "");
+          checkZona4 = checkZona2.isEmpty() ? 0 : Float.parseFloat(checkZona2);
+ 
+        
+          check1 = false; 
+       
+
+    } catch (NumberFormatException e) {
+
+
+          check1 = true; 
+         
+
+     }
+
+    try {
+
+        pfc.sleep(100);
+        pfc.click(s9);
+        pfc.sleep(1000);
+        
+        checkZona1 = pfc.getText(s3, s4).replaceAll("[^\\d.]", "");
+        checkZona3 = checkZona1.isEmpty() ? 0 : Float.parseFloat(checkZona1);
+
+        pfc.click(s13);
+        pfc.sleep(50);
+        pfc.click(s13);
+        pfc.sleep(1000);
+
+
+          check2 = false; 
+
+
+    } catch (NumberFormatException e) {
+
+ 
+          check2 = true;  
+
+          
+     }
+
+    try {
+
+         checkZona5 = pfc.getText(s5, s6).replaceAll("[^\\d.]", "");
+         checkZona6 = checkZona5.isEmpty() ? 0 : Float.parseFloat(checkZona5);
+      
+        
+          check3 = false;
+
+
+    } catch (NumberFormatException e) {
+
+
+          check3 = true; 
+          
+          
+     }
+  
+
+       if(!check1){
+   
+         check4 = "1 - 2 координаты распознаны ✅";
+
+          } else {
+
+                 check4 = "Не правильно определенна цена запроса, перенастрой 1 - 2 координаты! ❌  \n Попробуйте сделать координаты немного дальше или ближе";
+
+                  } if(!check2){
+    
+                      check5 = "3 - 4 координаты распознаны ✅";
+
+                       } else {
+
+                              check5 = "Не правильно определенна цена 1 лота, перенастрой 3 - 4 координаты! ❌  \n Попробуйте сделать координаты немного дальше или ближе";
+
+                               } if(!check3){
+   
+                                   check6 = "5 - 6 координаты распознаны ✅";
+
+                                    } else {
+ 
+                                           check6 = "Не правильно определен баланс, перенастрой 5 - 6 координаты! ❌  \n Попробуйте сделать координаты немного дальше или ближе";
+
+                                            }
+      
+             
+     
+       pfc.log(check4);
+       pfc.log(check5);
+       pfc.log(check6);
+       pfc.log("ᅟ");
+       pfc.log("📌 Проверьте верность данных:\n\n⚠️ Цена запроса - " + checkZona4 + "\n\n"  + "⚠️ Цена 1 лота - " + checkZona3 + "\n\n" + "⚠️ Ваш баланс - " + checkZona6 + "\n\n" + "⛔️ Если данные не совпадатают с реальными - перенастройте координаты в которых ошибка!" + "\n\n" + "✅ Если данные совпадают с реальными - приступайте к трейду!\n\n");
+       pfc.log("ᅟ");
+
+      if(check1 == true || check2 == true || check3 == true){
+   
+      pfc.log("❌ Ошибка в настройки какого либо из значений: \n\n 1) Цена запроса ⚠️ \n\n 2) Цена 1 лота ⚠️ \n\n 3) Баланс ⚠️ \n\n");
+                         break;
+
+      }
+
+
+       if(def_mod == true || customRand_mod == true || lotRand_mod == true){
+
+         oneMod = true;
+ 
+        } if(fullRound_mod == true || tenRound_mod == true || half_mod == true){
+
+             twoMod = true;
+
+           } if(percent_mod == true || full_mod == true || customFull_mod == true){
+
+                threeMod = true;
+
+                   }
+
+     
+                      EXIT == true ? log(" \n\n Не правильно настроен телеграмм бот: айди/токен бота в скрипте/телеграме 💬") : EXIT == false;
+
+
+         while(!EXIT) {
+
+       if (!poison && open_window != 1){
+
+               start(); 
+            poison = true;
+
+    }
+
+  try {
+
+
+   String zona1 = pfc.getText(s3, s4).replaceAll("[^\\d.]", "");
+   String zona2 = pfc.getText(s1, s2).replaceAll("[^\\d.]", "");
+
+   float zona3 = zona1.isEmpty() ? 0 : Float.parseFloat(zona1);
+   float zona4 = zona2.isEmpty() ? 0 : Float.parseFloat(zona2);
+
+   String balance1 = pfc.getText(s5, s6);
+   balance2 = balance1.isEmpty() ? 0 : Float.parseFloat(balance1);
+
+
+      if(slider_off > 0 && open_window != 1 && zona4 > slider_off){
+   
+         if(oneMod){
+   
+          if(def_mod) {
+          price = zona4 + castom_price;
+          } else if(customRand_mod){
+          float twoBarrier = custom_max;
+          barrier_mod == true ? twoBarrier = ((zona3 - zapLimit) - zona4) : twoBarrier;
+          float custRand_perebiv = rand(custom_min, twoBarrier);
+          price = zona4 + custRand_perebiv;
+          } else if(lotRand_mod){
+          float twoBarrier = zona3 - 0.01f;
+          barrier_mod == true ? twoBarrier = ((zona3 - zapLimit) - 0.01f) : twoBarrier;
+          float lotRand_perebiv = rand((zona4 + lot_min), twoBarrier);
+          price = lotRand_perebiv;
+          }
+        }
+      
+        
+        if(twoMod){
+
+          if(fullRound_mod){
+          price = (float)Math.ceil(zona4);
+          price == zona4 ? price = price + 1.00f : price;         
+          } else if(tenRound_mod){
+          price = (float)Math.ceil(zona4 * 10f) / 10f;
+          price == zona4 ? price = price + 0.10f : price;
+          (float)Math.abs(zona4 - (float)Math.floor(zona4 * 10f) / 10f) < 0.001f ? price = zona4 + 0.10f : price;
+          } else if(half_mod) {
+          price = zona4 + (zona3 - zona4) / 2f; 
+          }
+        }
+
+
+        if(threeMod){
+   
+          if(percent_mod){
+          price = (zona4 + ((zona3-zona4) * (percent_perebiv * 0.01f))); 
+          if(price >= zona3-0.01f){ price = zona3 - 0.01f; } 
+          } else if(full_mod){ 
+          float twoBarrier = zona3 - 0.01f;
+          barrier_mod == true ? twoBarrier = ((zona3 - zapLimit) - 0.01f) : twoBarrier;
+          price = twoBarrier;
+          } else if(customFull_mod){
+          float twoBarrier = zona3 - customFull_price;
+          barrier_mod == true ? twoBarrier = ((zona3 - zapLimit) - customFull_price) : twoBarrier;
+          price = twoBarrier;
+          }
+        }  
+     
+        price = ((int)(price * 100f) / 100.00f);
+
+          if(price < zona3 && price > zona4){
+                     expect();
+          pfc.pushToCb(String.valueOf(price));
+
+       if(barrier_mod == false){
+               warp();
+
+              } else {
+
+      if((zona3 - zapLimit) > price){
+               warp();
+
+       }
+   }
+     
+               
+        tg_notifications(zona3);
+          price = 99999.99f;
+
+            if(fullLimit_mod == true){
+
+               int fulls = 0;
+                float catchDefinition = skinPrice * (percentFull * 0.01f);
+              
+                 if(skinPrice > catchDefinition){
+
+                           fulls++;
+ 
+                    }
+
+                    if(fulls == numberFuls){
+   
+                       pfc.log(" Работа скрипта завершена модом - 'Full Limit' ");
+                       String off_FullLimit = "Работа скрипта завершена модом - 'Full Limit' ⛔";
+                       pfc.sendToTg(token, chatId, off_FullLimit);
+                       EXIT = false;
+                       break;
+ 
+
+             } 
+
+          }
+
+       }
+
+   }
+
+
+
+ lastgoldBalance = balance2;
+     slider_off = zona4;
+
+} catch (NumberFormatException e) {
+
+
+          e.printStackTrace();
+          pfc.log("⚠️ Произошла ошибка в распознование одного из этих значений: \n\n 1) Цена запроса ⛔ \n\n 2) Цена 1 лота ⛔ \n\n 3) Баланс ⛔ \n\n");
+          pfc.log("\n\n ⚠️ Перенастрой первые 6 координат! \n\n");
+          pfc.log("\n\n ⚠️ Попробуйте сделать координаты немного дальше или ближе \n\n");
+          pfc.log("ᅟ");
+  
+          
+     }
+
+         
+      if(balanceLimit_mod){
+    
+            if(balance2 < balLimit){
+
+              pfc.log(" Работа скрипта завершена модом - 'Balance Limit' ");
+              String off_BalanceLimit = "Работа скрипта завершена модом - 'Balance Limit' ⛔";
+              pfc.sendToTg(token, chatId, off_BalanceLimit);
+              EXIT = false;
+              break;
+
+         }
+        
+     }
+
+
+      if ((Time.getMillis() - time) >= open_window) {
+
+                     pfc.click(s13);
+                     pfc.sleep(50);
+
+              if(auto_sell == true) {
+             
+                 pfc.sleep(antiBug);   
+              if(pfc.getColor(s15) == s16) {          
+               
+                   skin_sale();
+                   pfc.sleep(speed4);
+                   pfc.click(s11);
+                   open_window = 1;
+ 
+                }
+
+             } else {
+
+   open_window = fantom_openWindow;
+             start();  
+   
+
+       }    
+
+
+      time = Time.getMillis();
+
+    }
+
+   if(workTime_mod) {
+  
+      if((Time.getMillis() - time2) >= (timeWork * 60000)) {
+
+      pfc.log(" Работа скрипта завершена модом - 'Work time' ");
+      String off_WorkTime = "Работа скрипта завершена модом - 'Work time' ⛔";
+      pfc.sendToTg(token, chatId, off_WorkTime);
+      EXIT = false;
+      break;
+
+             }
+   
+         }     
+  
+  pfc.sleep(1);
+ 
+   }
